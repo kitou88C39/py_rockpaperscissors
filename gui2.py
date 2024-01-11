@@ -9,8 +9,8 @@ class Application(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-    self.quit = tk.Button(self,text="Button", command=self.master.destroy)
-    self.quit.place(x=80, y=80)
+        self.quit = tk.Button(self,text="Button", command=self.master.destroy)
+        self.quit.place(x=80, y=80)
 
     root = tk.Tk()
     root.geometry("200x200")
