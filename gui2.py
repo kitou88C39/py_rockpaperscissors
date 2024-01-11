@@ -15,4 +15,4 @@ class Application(tk.Frame):
     root = tk.Tk()
     root.geometry("200x200")
     app = Application(master=root)
-    app.mainloop()
+    root.mainloop()
