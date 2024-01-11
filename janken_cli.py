@@ -18,3 +18,5 @@ while True:
 
     result = rules[(my_hand, enemy_hand)]
     print(result)
+    if enemy_hand != my_hand:
+        break
