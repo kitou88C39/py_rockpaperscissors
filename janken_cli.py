@@ -13,4 +13,6 @@ enemy_hand = ramdom.randint(0, 2)
 
 my_hand_str = hands[my_hand]
 enemy_hand_str = hands[enemy_hand]
-print()
+print("自分" + "my_hand_str" + "相手")
+
+result = rules[(my_hand, enemy_hand)]
