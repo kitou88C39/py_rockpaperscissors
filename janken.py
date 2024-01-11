@@ -6,7 +6,8 @@ enemy_hand = pa
 
 if my_hand == enemy_hand:
     print(draw)
-elif (my_hand == gu and enemy_hand == choki) or:
+elif (my_hand == gu and enemy_hand == choki) or\
+    (my_hand == pa and enemy_hand == gu) or\:
     print(win)
 else
     print(lose)
