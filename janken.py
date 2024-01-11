@@ -6,3 +6,5 @@ enemy_hand = pa
 
 if my_hand == enemy_hand:
     print(draw)
+elif my_hand == gu and enemy_hand ===choki:
+    print(win)
