@@ -7,7 +7,7 @@ rules = {
     (2,0):win,(2,1):lose, (2,2):draw
 }
 
-my_hand = input("0~2の数字を入力して下さい>>>")
+my_input = int(input("0~2の数字を入力して下さい>>>"))
 enemy_hand = 1
 result = rules[(my_hand, enemy_hand)]
 print(result)
