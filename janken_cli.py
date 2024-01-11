@@ -1,5 +1,6 @@
-hands = ["グー", "チョキ", "パー"]
+import ramdom
 
+hands = ["グー", "チョキ", "パー"]
 win, draw, lose = "勝","相子","負"
 rules = {
     (0,0):draw,(0,1):win, (0,2):lose,
@@ -7,7 +8,7 @@ rules = {
     (2,0):win,(2,1):lose, (2,2):draw
 }
 
-my_input = int(input("0~2の数字を入力して下さい>>>"))
-enemy_hand = 1
+my_hand = int(input("0~2の数字を入力して下さい>>>"))
+enemy_hand = ramdom.randint(0, 2)
 result = rules[(my_hand, enemy_hand)]
 print(result)
