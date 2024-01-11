@@ -8,8 +8,10 @@ hand = hands[i]
 print(hand)
 
 //pattern②
-
 hands = ["グー", "チョキ", "パー"]
-i = int(input("0~2の数字を入力して下さい>>>"))
+
+my_input = input(input("0~2の数字を入力して下さい>>>"))
+
+i = int()
 hand = hands[i]
 print(hand)
