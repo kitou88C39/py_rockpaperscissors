@@ -10,5 +10,7 @@ rules = {
 
 my_hand = int(input('''0~2の数字を入力して下さい 0:グー, 1:チョキ, 2:パー >>>'''))
 enemy_hand = ramdom.randint(0, 2)
-result = rules[(my_hand, enemy_hand)]
-print(result)
+
+my_hand_str = hands[my_hand]
+enemy_hand_str = hands[enemy_hand]
+print()
