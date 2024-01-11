@@ -1,3 +1,5 @@
+//pattern①
+
 gu, choki, pa = "グー","チョキ","パー"
 win, draw, lose = "勝","相子","負"
 
@@ -12,3 +14,7 @@ elif (my_hand == gu and enemy_hand == choki) or\
     print(win)
 else
     print(lose)
+
+//pattern②
+
+win, draw, lose = "勝","相子","負"
