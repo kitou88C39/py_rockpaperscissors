@@ -8,11 +8,13 @@ rules = {
     (2,0):win,(2,1):lose, (2,2):draw
 }
 
-my_hand = int(input('''0~2の数字を入力して下さい 0:グー, 1:チョキ, 2:パー >>>'''))
-enemy_hand = ramdom.randint(0, 2)
+while True:
+    my_hand = int(input('''0~2の数字を入力して下さい 0:グー, 1:チョキ, 2:パー >>>'''))
+    enemy_hand = ramdom.randint(0, 2)
 
-my_hand_str = hands[my_hand]
-enemy_hand_str = hands[enemy_hand]
-print("自分:" + "my_hand_str" + "相手:" + enemy_hand_str)
+    my_hand_str = hands[my_hand]
+    enemy_hand_str = hands[enemy_hand]
+    print("自分:" + "my_hand_str" + "相手:" + enemy_hand_str)
 
-result = rules[(my_hand, enemy_hand)]
+    result = rules[(my_hand, enemy_hand)]
+    print(result)
