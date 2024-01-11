@@ -1,5 +1,5 @@
 //pattern①
-import ramdom
+import random
 
 hands = ["グー", "チョキ", "パー"]
 
