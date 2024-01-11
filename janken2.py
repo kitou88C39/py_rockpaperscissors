@@ -11,3 +11,5 @@ print(hand)
 
 hands = ["グー", "チョキ", "パー"]
 i = int(input("0~2の数字を入力して下さい>>>"))
+hand = hands[i]
+print(hand)
