@@ -16,5 +16,7 @@ pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
 pa_image = ImageTk.PhotoImage(pa_image, master=root)
 
 tk.Label(root, image=gu_image).place(x=100, y=100)
+tk.Label(root, image=choki_image).place(x=100, y=100)
+tk.Label(root, image=pa_image).place(x=100, y=100)
 
 root.mainloop()
