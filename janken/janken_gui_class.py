@@ -17,5 +17,7 @@ class View:
 
 //Applicationのクラスを作り、tk.Frameを継承する
 class Application(tk.Frame):
-    
+
     def __init__(self, master=None):
+        super().__init__(master)
+        master.geometry("420x400")
