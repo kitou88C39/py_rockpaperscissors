@@ -9,6 +9,7 @@ rules = {
 }
 
 while True:
+    //inputを受け取って、intに変換する
     my_hand = int(input('''0~2の数字を入力して下さい 0:グー, 1:チョキ, 2:パー >>>'''))
     enemy_hand = ramdom.randint(0, 2)
 
