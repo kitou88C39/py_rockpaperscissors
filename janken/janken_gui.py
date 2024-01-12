@@ -7,5 +7,6 @@ root.geometry("420x400")
 
 //じゃんけんの画像を置く
 gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
+gu_image = ImageTk.PhotoImage(gu_image, master=root)
 
 root.mainloop()
