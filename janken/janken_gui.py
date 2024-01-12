@@ -52,6 +52,9 @@ text_label.place(x=140, y=140)
 def judge(me):
     enemy = random.randint(0,2)
     result = rules[(me, enemy)]
-    print(result)
+//画面上に結果を表示させる
+if result == DRAW:
+    text_label.configure(text_result)
+
 
 root.mainloop()
