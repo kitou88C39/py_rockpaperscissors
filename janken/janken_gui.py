@@ -1,5 +1,5 @@
 import random
-mport tkinter as tk
+import tkinter as tk
 from PIL import Image, ImageTk //PIL パッケージから Image クラスと ImageTk クラスをインポート
 
 gu, choki, pa = "グー", "チョキ", "パー"
