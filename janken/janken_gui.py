@@ -44,7 +44,9 @@ tk.Button(frame, text="pa" command=press_pa).place(x=335, y=320)
 //相手の手を表示させる
 enemy_label = tk.Label(root, image=gu_image)
 enemy_label.place(x=160, y=20)
-tk.Label(root, text="最初はgo! じゃんけん!").place(x=140, y=140)
+//画面を表示させる　text_labelの作成
+text_label = tk.Label(root, text="最初はgo! じゃんけん!")
+text_label.place(x=140, y=140)
 
 //じゃんけんの判定を表示する
 def judge(me):
