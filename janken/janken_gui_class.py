@@ -10,3 +10,6 @@ rules = {
     (1,0):LOSE,(1,1):DRAW, (1,2):WIN,
     (2,0):WIN,(2,1):LOSE, (2,2):DRAW
 }
+
+//View classを作成する
+class View:
