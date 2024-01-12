@@ -39,10 +39,13 @@ def press_pa():
 
 gu_btn = tk.Button(frame, text="gu" command=press_gu)
 gu_btn.place(x=50, y=320)
+
 choki_btn = tk.Button(frame, text="choki" command=press_choki)
 choki_btn.place(x=190, y=320)
+
 pa_btn = tk.Button(frame, text="pa" command=press_pa)
 pa_btn.place(x=335, y=320)
+
 
 //相手の手を表示させる
 enemy_label = tk.Label(root, image=gu_image)
@@ -56,6 +59,9 @@ retry_btn = tk.Button(root, text="リトライ")
 //勝ちか負けの時にリトライボタンを表示する
 def show_retry():
     retry_btn.place(x=185, y=360)
+    gu_btn['state'] = tk.DISABLED
+    choki_btn['state'] = tk.DISABLED
+    pa_btn['state'] = tk.DISABLED
 
 
 //じゃんけんの判定を表示する
