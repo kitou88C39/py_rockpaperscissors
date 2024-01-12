@@ -61,6 +61,7 @@ def retry():
     choki_btn['state'] = tk.ACTIVE
     pa_btn['state'] = tk.ACTIVE
     text_label.configure(text="最初はgu! じゃんけん!")
+    enemy_label.configure(image=gu_image)
 
 retry_btn = tk.Button(root, text="リトライ", command=retry)
 //勝ちか負けの時にリトライボタンを表示する
