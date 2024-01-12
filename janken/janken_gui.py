@@ -54,7 +54,10 @@ def judge(me):
     result = rules[(me, enemy)]
 //画面上に結果を表示させる
 if result == DRAW:
-    text_label.configure(text_result)
-
+    text_label.configure(text="あいこでしょ！")
+elif result == WIN:
+    text_label.configure(text="勝ち！")
+else
+    text_label.configure(text="負け！")
 
 root.mainloop()
