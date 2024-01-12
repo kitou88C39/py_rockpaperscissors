@@ -19,4 +19,9 @@ tk.Label(root, image=gu_image).place(x=20, y=100)
 tk.Label(root, image=choki_image).place(x=160, y=100)
 tk.Label(root, image=pa_image).place(x=300, y=100)
 
+//ボタンを配置する
+tk.Button(frame, text="gu").place(x=45, y=320)
+tk.Button(frame, text="choki").place(x=180, y=320)
+tk.Button(frame, text="pa").place(x=325, y=320)
+
 root.mainloop()
