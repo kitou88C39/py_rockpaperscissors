@@ -5,4 +5,7 @@ from PIL import Image, ImageTk //PIL パッケージから Image クラスと Im
 root = tk.Tk()
 root.geometry("420x400")
 
+//じゃんけんの画像を置く
+gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
+
 root.mainloop()
