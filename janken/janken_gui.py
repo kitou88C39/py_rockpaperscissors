@@ -31,6 +31,10 @@ tk.Label(root, image=pa_image).place(x=300, y=100)
 //ボタンをクリックしたら、起動する
 def press_gu():
     print("The button was pressed")
+def press_choki():
+    print("choki")
+def press_pa():
+    print("pa")
 
 tk.Button(frame, text="gu" command=press_gu).place(x=50, y=320)
 tk.Button(frame, text="choki" command=press_choki).place(x=190, y=320)
@@ -40,5 +44,7 @@ tk.Button(frame, text="pa" command=press_pa).place(x=335, y=320)
 enemy_label = tk.Label(root, image=gu_image)
 enemy_label.place(x=160, y=20)
 tk.Label(root, text="最初はgo! じゃんけん!").place(x=140, y=140)
+
+//じゃんけんの判定
 
 root.mainloop()
