@@ -1,7 +1,7 @@
 import random
 
 gu, choki, pa = "グー", "チョキ", "パー"
-hands = ["グー", "チョキ", "パー"]
+hands = [gu, choki, pa]
 win, draw, lose = "勝","相子","負"
 rules = {
     (0,0):draw,(0,1):win, (0,2):lose,
