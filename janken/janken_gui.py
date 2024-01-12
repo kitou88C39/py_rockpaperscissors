@@ -20,8 +20,12 @@ tk.Label(root, image=choki_image).place(x=160, y=100)
 tk.Label(root, image=pa_image).place(x=300, y=100)
 
 //ボタンを配置する
-tk.Button(frame, text="gu").place(x=45, y=320)
-tk.Button(frame, text="choki").place(x=180, y=320)
-tk.Button(frame, text="pa").place(x=325, y=320)
+tk.Button(frame, text="gu").place(x=50, y=320)
+tk.Button(frame, text="choki").place(x=190, y=320)
+tk.Button(frame, text="pa").place(x=335, y=320)
+
+//相手の手を表示させる
+enemy_label = tk.Label(root, image=gu_image)
+enemy_label.place(x=160, y=20)
 
 root.mainloop()
