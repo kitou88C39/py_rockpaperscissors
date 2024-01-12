@@ -23,7 +23,9 @@ choki_image = Image.open('img/choki.png').convert('RGB').resize((100,100))
 choki_image = ImageTk.PhotoImage(choki_image, master=root)
 
 pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
-pa_image = ImageTk.PhotoImage(pa_image, master=root)
+pa_image = ImageTk.PhotoImage(pa_image)
+
+images = [gu_image, choki_image, pa_image]
 
 tk.Label(root, image=gu_image).place(x=20, y=100)
 tk.Label(root, image=choki_image).place(x=160, y=100)
