@@ -48,6 +48,13 @@ enemy_label.place(x=160, y=20)
 text_label = tk.Label(root, text="最初はgo! じゃんけん!")
 text_label.place(x=140, y=140)
 
+//リトライボタンを表示する
+retry_btn = tk.Button(root, text="リトライ")
+//勝ちか負けの時にリトライボタンを表示する
+def show_retry():
+    retry_btn.place(x=185, y=360)
+
+
 //じゃんけんの判定を表示する
 def judge(me):
     enemy = random.randint(0,2)
