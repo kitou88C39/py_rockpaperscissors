@@ -57,7 +57,8 @@ if result == DRAW:
     text_label.configure(text="あいこでしょ！")
 elif result == WIN:
     text_label.configure(text="勝ち！")
+    show_retry()//リトライボタンを表示させて、じゃんけんを続けるか確認する
 else
     text_label.configure(text="負け！")
-
+    show_retry()//リトライボタンを表示させて、じゃんけんを続けるか確認する
 root.mainloop()
