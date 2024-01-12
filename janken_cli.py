@@ -1,12 +1,12 @@
 import random
 
-gu, choki, pa = "グー", "チョキ", "パー"
-hands = [gu, choki, pa]
-WIN, DRAW, LOSE = "勝","相子","負"
+
+hands = ["グー", "チョキ", "パー"]
+win, draw, lose = "勝","相子","負"
 rules = {
-    (0,0):DRAW,(0,1):WIN, (0,2):LOSE,
-    (1,0):LOSE,(1,1):DRAW, (1,2):WIN,
-    (2,0):WIN,(2,1):LOSE, (2,2):DRAW
+    (0,0):draw,(0,1):win, (0,2):lose,
+    (1,0):lose,(1,1):draw, (1,2):win,
+    (2,0):win,(2,1):lose, (2,2):draw
 }
 
 while True://無限ループ

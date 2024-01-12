@@ -1,12 +1,13 @@
 import tkinter as tk
 from PIL import Image, ImageTk //PIL パッケージから Image クラスと ImageTk クラスをインポート
 
-hands = ["グー", "チョキ", "パー"]
-win, draw, lose = "勝","相子","負"
+gu, choki, pa = "グー", "チョキ", "パー"
+hands = [gu, choki, pa]
+WIN, DRAW, LOSE = "勝","相子","負"
 rules = {
-    (0,0):draw,(0,1):win, (0,2):lose,
-    (1,0):lose,(1,1):draw, (1,2):win,
-    (2,0):win,(2,1):lose, (2,2):draw
+    (0,0):DRAW,(0,1):WIN, (0,2):LOSE,
+    (1,0):LOSE,(1,1):DRAW, (1,2):WIN,
+    (2,0):WIN,(2,1):LOSE, (2,2):DRAW
 }
 
 //tkinterを使って画面を構築
@@ -27,8 +28,11 @@ tk.Label(root, image=gu_image).place(x=20, y=100)
 tk.Label(root, image=choki_image).place(x=160, y=100)
 tk.Label(root, image=pa_image).place(x=300, y=100)
 
-//ボタンを配置する
-tk.Button(frame, text="gu").place(x=50, y=320)
+//ボタンをクリックしたら、起動する
+def some_func():
+    print("The button was pressed")
+
+tk.Button(frame, text="gu" command=some_func).place(x=50, y=320)
 tk.Button(frame, text="choki").place(x=190, y=320)
 tk.Button(frame, text="pa").place(x=335, y=320)
 
