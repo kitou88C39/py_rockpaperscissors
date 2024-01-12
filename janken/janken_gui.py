@@ -1,4 +1,5 @@
-import tkinter as tk
+import random
+mport tkinter as tk
 from PIL import Image, ImageTk //PIL パッケージから Image クラスと ImageTk クラスをインポート
 
 gu, choki, pa = "グー", "チョキ", "パー"
@@ -46,5 +47,8 @@ enemy_label.place(x=160, y=20)
 tk.Label(root, text="最初はgo! じゃんけん!").place(x=140, y=140)
 
 //じゃんけんの判定
+def judge(me):
+    enemy = random.randint(0,2)
+    result = rules[(me, enemy)]
 
 root.mainloop()
