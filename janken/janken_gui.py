@@ -29,12 +29,12 @@ tk.Label(root, image=choki_image).place(x=160, y=100)
 tk.Label(root, image=pa_image).place(x=300, y=100)
 
 //ボタンをクリックしたら、起動する
-def some_func():
+def press_gu():
     print("The button was pressed")
 
-tk.Button(frame, text="gu" command=some_func).place(x=50, y=320)
-tk.Button(frame, text="choki").place(x=190, y=320)
-tk.Button(frame, text="pa").place(x=335, y=320)
+tk.Button(frame, text="gu" command=press_gu).place(x=50, y=320)
+tk.Button(frame, text="choki" command=press_choki).place(x=190, y=320)
+tk.Button(frame, text="pa" command=press_pa).place(x=335, y=320)
 
 //相手の手を表示させる
 enemy_label = tk.Label(root, image=gu_image)
