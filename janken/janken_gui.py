@@ -78,6 +78,8 @@ def show_retry():
 def judge(me):
     enemy = random.randint(0,2)
     result = rules[(me, enemy)]
+    enemy_label.configure(image=images[enemy])
+
 //画面上に結果を表示させる
 if result == DRAW:
     text_label.configure(text="あいこでしょ！")
