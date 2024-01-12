@@ -37,9 +37,12 @@ def press_choki():
 def press_pa():
     judge(2)
 
-tk.Button(frame, text="gu" command=press_gu).place(x=50, y=320)
-tk.Button(frame, text="choki" command=press_choki).place(x=190, y=320)
-tk.Button(frame, text="pa" command=press_pa).place(x=335, y=320)
+gu_btn = tk.Button(frame, text="gu" command=press_gu)
+gu_btn.place(x=50, y=320)
+choki_btn = tk.Button(frame, text="choki" command=press_choki)
+choki_btn.place(x=190, y=320)
+pa_btn = tk.Button(frame, text="pa" command=press_pa)
+pa_btn.place(x=335, y=320)
 
 //相手の手を表示させる
 enemy_label = tk.Label(root, image=gu_image)
