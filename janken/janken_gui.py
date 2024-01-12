@@ -55,7 +55,13 @@ text_label = tk.Label(root, text="最初はgo! じゃんけん!")
 text_label.place(x=140, y=140)
 
 //リトライボタンを表示する
-retry_btn = tk.Button(root, text="リトライ")
+def retry():
+    retry_btn.place_forget()//リトライボタンを押すと非表示する
+    gu_btn['state'] = tk.DISABLED
+    choki_btn['state'] = tk.DISABLED
+    pa_btn['state'] = tk.DISABLED
+
+retry_btn = tk.Button(root, text="リトライ", command=retry)
 //勝ちか負けの時にリトライボタンを表示する
 def show_retry():
     retry_btn.place(x=185, y=360)
