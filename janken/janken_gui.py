@@ -9,6 +9,12 @@ root.geometry("420x400")
 gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
 gu_image = ImageTk.PhotoImage(gu_image, master=root)
 
+choki_image = Image.open('img/choki.png').convert('RGB').resize((100,100))
+choki_image = ImageTk.PhotoImage(choki_image, master=root)
+
+pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
+pa_image = ImageTk.PhotoImage(pa_image, master=root)
+
 tk.Label(root, image=gu_image).place(x=100, y=100)
 
 root.mainloop()
