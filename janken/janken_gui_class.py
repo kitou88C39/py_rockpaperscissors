@@ -14,7 +14,7 @@ rules = {
 //View classを作成する
 class View:
     def __init__(self):
-        //じゃんけんの画像を置く インスタンス変数にする
+        //じゃんけんの画像を置く インスタンス変数にする self.を先頭に入れる
         self.gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
         self.gu_image = ImageTk.PhotoImage(gu_image, master=root)
 
@@ -23,6 +23,10 @@ class View:
 
         self.pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
         self.pa_image = ImageTk.PhotoImage(pa_image)
+
+        self.tk.Label(root, image=gu_image).place(x=20, y=100)
+        self.tk.Label(root, image=choki_image).place(x=160, y=100)
+        self.tk.Label(root, image=pa_image).place(x=300, y=100)
         
     
 
