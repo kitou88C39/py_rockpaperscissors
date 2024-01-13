@@ -39,22 +39,22 @@ def press_choki():
 def press_pa():
     judge(2)
 
-gu_btn = tk.Button(frame, text="gu" command=press_gu)
-gu_btn.place(x=50, y=320)
+# gu_btn = tk.Button(frame, text="gu" command=press_gu)
+# gu_btn.place(x=50, y=320)
 
-choki_btn = tk.Button(frame, text="choki" command=press_choki)
-choki_btn.place(x=190, y=320)
+# choki_btn = tk.Button(frame, text="choki" command=press_choki)
+# choki_btn.place(x=190, y=320)
 
-pa_btn = tk.Button(frame, text="pa" command=press_pa)
-pa_btn.place(x=335, y=320)
+# pa_btn = tk.Button(frame, text="pa" command=press_pa)
+# pa_btn.place(x=335, y=320)
 
 
-//相手の手を表示させる
-enemy_label = tk.Label(root, image=gu_image)
-enemy_label.place(x=160, y=20)
-//画面を表示させる text_labelの作成
-text_label = tk.Label(root, text="最初はgu! じゃんけん!")
-text_label.place(x=140, y=140)
+# //相手の手を表示させる
+# enemy_label = tk.Label(root, image=gu_image)
+# enemy_label.place(x=160, y=20)
+# //画面を表示させる text_labelの作成
+# text_label = tk.Label(root, text="最初はgu! じゃんけん!")
+# text_label.place(x=140, y=140)
 
 //リトライボタンを表示する
 def retry():
@@ -63,9 +63,9 @@ def retry():
     choki_btn['state'] = tk.ACTIVE
     pa_btn['state'] = tk.ACTIVE
     text_label.configure(text="最初はgu! じゃんけん!")
-    enemy_label.configure(image=gu_image)
+    enemy_label.configure(image=gu_image[0])
 
-retry_btn = tk.Button(root, text="リトライ", command=retry)
+# retry_btn = tk.Button(root, text="リトライ", command=retry)
 //勝ちか負けの時にリトライボタンを表示する
 def show_retry():
     retry_btn.place(x=185, y=360)
