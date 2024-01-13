@@ -32,6 +32,25 @@ class View:
 
         self.pa_label = tk.Label(root, image=pa_image)
         self.pa_label.place(x=300, y=100)
+
+        self.gu_btn = tk.Button(frame, text="gu" command=press_gu)
+        self.gu_btn.place(x=50, y=320)
+
+        self.choki_btn = tk.Button(frame, text="choki" command=press_choki)
+        self.choki_btn.place(x=190, y=320)
+
+        self.pa_btn = tk.Button(frame, text="pa" command=press_pa)
+        self.pa_btn.place(x=335, y=320)
+
+        //相手の手を表示させる
+        self.enemy_label = tk.Label(root, image=gu_image)
+        self.enemy_label.place(x=160, y=20)
+       
+       //画面を表示させる text_labelの作成
+       self.text_label = tk.Label(root, text="最初はgu! じゃんけん!")
+       self.text_label.place(x=140, y=140)
+
+       self.retry_btn = tk.Button(root, text="リトライ", command=retry)
     
 
 //Applicationのクラスを作り、tk.Frameを継承する
