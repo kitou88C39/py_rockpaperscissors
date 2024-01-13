@@ -14,15 +14,15 @@ rules = {
 //View classを作成する
 class View:
     def __init__(self):
-        //じゃんけんの画像を置く
-        gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
-        gu_image = ImageTk.PhotoImage(gu_image, master=root)
+        //じゃんけんの画像を置く インスタンス変数にする
+        self.gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
+        self.gu_image = ImageTk.PhotoImage(gu_image, master=root)
 
-        choki_image = Image.open('img/choki.png').convert('RGB').resize((100,100))
-        choki_image = ImageTk.PhotoImage(choki_image, master=root)
+        self.choki_image = Image.open('img/choki.png').convert('RGB').resize((100,100))
+        self.choki_image = ImageTk.PhotoImage(choki_image, master=root)
 
-        pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
-        pa_image = ImageTk.PhotoImage(pa_image)
+        self.pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
+        self.pa_image = ImageTk.PhotoImage(pa_image)
         
     
 
