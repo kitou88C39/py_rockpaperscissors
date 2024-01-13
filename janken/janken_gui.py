@@ -27,9 +27,9 @@ root.geometry("420x400")
 
 images = [gu_image, choki_image, pa_image]
 
-tk.Label(root, image=gu_image).place(x=20, y=100)
-tk.Label(root, image=choki_image).place(x=160, y=100)
-tk.Label(root, image=pa_image).place(x=300, y=100)
+# tk.Label(root, image=gu_image).place(x=20, y=100)
+# tk.Label(root, image=choki_image).place(x=160, y=100)
+# tk.Label(root, image=pa_image).place(x=300, y=100)
 
 //ボタンをクリックしたら、起動する
 def press_gu():
