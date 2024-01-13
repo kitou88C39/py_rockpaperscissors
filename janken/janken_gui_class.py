@@ -24,10 +24,14 @@ class View:
         self.pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
         self.pa_image = ImageTk.PhotoImage(pa_image)
 
-        self.tk.Label(root, image=gu_image).place(x=20, y=100)
-        self.tk.Label(root, image=choki_image).place(x=160, y=100)
-        self.tk.Label(root, image=pa_image).place(x=300, y=100)
-        
+        self.gu_label = tk.Label(root, image=gu_image)
+        self.gu_label.place(x=20, y=100)
+
+        self.choki_label =.tk.Label(root, image=choki_image)
+        self.choki_label.place(x=160, y=100)
+
+        self.pa_label = tk.Label(root, image=pa_image)
+        self.pa_label.place(x=300, y=100)
     
 
 //Applicationのクラスを作り、tk.Frameを継承する
