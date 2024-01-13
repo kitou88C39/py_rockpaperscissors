@@ -50,7 +50,7 @@ class View:
        self.text_label = tk.Label(root, text="最初はgu! じゃんけん!")
        self.text_label.place(x=140, y=140)
 
-       self.retry_btn = tk.Button(root, text="リトライ", command=retry)
+       self.retry_btn = tk.Button(root, text="リトライ")
     
 
 //Applicationのクラスを作り、tk.Frameを継承する
