@@ -13,7 +13,9 @@ rules = {
 
 //View classを作成する
 class View:
-    pass
+    def __init__(self):
+        
+    
 
 //Applicationのクラスを作り、tk.Frameを継承する
 class Application(tk.Frame):
