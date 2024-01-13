@@ -21,3 +21,6 @@ class Application(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
         master.geometry("420x400")
+        master.title("ジャンケンゲーム")
+
+        self.view = View()
