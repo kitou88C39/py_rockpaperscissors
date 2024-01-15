@@ -98,8 +98,10 @@ class Application(tk.Frame):
         enemy = random.randient(0,2)
         result = rules[(my_hand, enemy)]
         self.view.display(enemy, result)
+        if.result != DRAW:
+            self.view.show_retry()
 
-    def judge(self):
+    def retry(self):
         self.view.reset()
 
 root = tk.Tk()
