@@ -9,8 +9,8 @@ with zipfile.ZipFile('sample_dir1/sample_zip.zip', 'w')as zf:
 #zipfileの解凍
 import zipfile
 
-with zipfile.ZipFile('sample_dir1/sample_zip.zip', 'w')as zf:
-    zf.extractall('sample_dir1/*.txt'):
+with zipfile.ZipFile('sample_dir1/sample_zip.zip')as zf:
+    zf.extractall('sample_dir1/sample_dir2'):
     
 
 
