@@ -45,4 +45,7 @@ num_rows = [
 with open('sample.csv', mode='w+') as f:
     writer = csv.writer(f)
     for row in num_rows:
+    f.seek(0)
+    reader = csv.DictReader(f,fieldnames=["ONE", "TWO", "THREE", "FOR"])
+    for row in reader:
         print(row)
