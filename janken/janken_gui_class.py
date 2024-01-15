@@ -76,3 +76,7 @@ class Application(tk.Frame):
 
     def judge(self):
         self.view.reset()
+
+root = tk.Tk()
+app = Application(master=root)
+app.mainloop()
