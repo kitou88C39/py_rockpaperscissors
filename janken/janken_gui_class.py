@@ -58,9 +58,24 @@ class View:
     def reset(self):
         pass
 
-    def display(enemy, result):
+# 結果を表示する
+    def display(self, enemy, result):
         self.enemy_label.configure(image=self.images[enemy])
         if result == DRAW:
+            self.text_label.configure(text="相子")
+        elif result == WIN:
+            self.text_label.configure(text="勝ち")
+        elif result == LOSE:
+            self.text_label.configure(text="負け")
+    
+    def show_retry(self):
+        self.retry_button.place(x=175, y=360)
+        self.gu_btton["state"] = tk.DISABLED
+        self.choki_btton["state"] = tk.DISABLED
+        self.pa_btton["state"] = tk.DISABLED
+
+
+    
 
     
 
