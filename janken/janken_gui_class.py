@@ -70,3 +70,6 @@ class Application(tk.Frame):
 //じゃんけんの実際の処理
     def judge(self, my_hand):
         pass
+
+    def judge(self):
+        self.view.reset()
