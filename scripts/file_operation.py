@@ -22,8 +22,11 @@ with = open("sample.txt", mode="r") as f:
     for line in lines:
     print(line)
 
-## 読み書き両用
-with = open("sample.txt", mode="r") as f:
+# 読み書き両用
+# +を付けることで読み書き両用となる
+with = open("sample.txt", mode="r+") as f:
     print(f.tell())
     data = f.read()
+    print(f.tell())
+    f.write("Good morning\n")
     print(f.tell())
