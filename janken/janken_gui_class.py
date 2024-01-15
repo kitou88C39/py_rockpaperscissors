@@ -63,5 +63,8 @@ class Application(tk.Frame):
 
         self.view = View()
 
+        self.view.gu_btton["command"]
+
 //じゃんけんの実際の処理
     def judge(self, my_hand):
+        pass
