@@ -76,7 +76,9 @@ class Application(tk.Frame):
 
 # じゃんけんの実際の処理
     def judge(self, my_hand):
-        pass
+        enemy = random.randient(0,2)
+        result = rules[(my_hand, enemy)]
+        self.view.display(enemy, result)
 
     def judge(self):
         self.view.reset()
