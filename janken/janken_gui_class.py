@@ -59,7 +59,8 @@ class View:
         pass
 
     def display(enemy, result):
-        self.enemy_label
+        self.enemy_label.configure(image=self.images[enemy])
+        if result == DRAW:
 
     
 
