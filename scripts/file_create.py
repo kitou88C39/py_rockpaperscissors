@@ -8,11 +8,6 @@ chrs = ['a','b','c','d']
 for ch in chrs:
     pathlib.Path(f'sample_dir/{ch * 3}.txt').touch()
 
-pathlib.Path('sample_dir/sample.txt').touch()
-p.touch()
+pathlib.Path('sample_dir/sample.txt/eee.txt').touch()
+pathlib.Path(f'sample_dir/fff.csv').touch()
 
-with p.open(mode='w') as f:
-    f.write('Good Morining')
-
-with p.open(mode='w') as f:
-    print(f.read())
