@@ -61,6 +61,8 @@ class View:
     def display(enemy, result):
         self.enemy_label.configure(image=self.images[enemy])
         if result == DRAW:
+            self.text_label.configure(text="相子")
+        elif result == WIN:
 
     
 
