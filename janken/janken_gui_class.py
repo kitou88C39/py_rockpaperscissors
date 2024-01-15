@@ -24,6 +24,8 @@ class View:
         self.pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
         self.pa_image = ImageTk.PhotoImage(self.pa_image)
 
+        images = [gu_image, choki_image, pa_image]
+
         self.gu_label = tk.Label(root, image=self.gu_image)
         self.gu_label.place(x=20, y=100)
 
