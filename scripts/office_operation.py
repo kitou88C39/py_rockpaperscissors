@@ -41,8 +41,12 @@ document.save('word_sample.docx')
 #sample2
 import docx
 
-document = docx.Document()
-document.save('word_sample.docx')
+document = docx.Document('word_sample.docx')
+document.add_heading('Document Title', 0)
+p = document.add_paragraph('A plain paragraph having some')
+p.add_run('bold').bold = True
+p.add_run('and some')
+p.add_run('italic.').italic = True
 
 # 文書を保存する
 document.save('word_sample.docx')
