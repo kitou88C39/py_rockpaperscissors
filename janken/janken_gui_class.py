@@ -57,12 +57,15 @@ class View:
 # ジャッジとリセット
     def reset(self):
         pass
-
+# 結果を表示する
     def display(enemy, result):
         self.enemy_label.configure(image=self.images[enemy])
         if result == DRAW:
             self.text_label.configure(text="相子")
         elif result == WIN:
+            self.text_label.configure(text="勝ち")
+        elif result == LOSE:
+            self.text_label.configure(text="負け")
 
     
 
