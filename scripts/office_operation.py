@@ -33,8 +33,16 @@ wb.save('excel_sample.xlsx')
 
 #word
 #sample1
-
 import docx
 
 document = docx.Document()
+document.save('word_sample.docx')
+
+#sample2
+import docx
+
+document = docx.Document()
+document.save('word_sample.docx')
+
+# 文書を保存する
 document.save('word_sample.docx')
