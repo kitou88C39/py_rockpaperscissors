@@ -62,3 +62,14 @@ with p.open(mode='w') as f:
 with p.open(mode='w') as f:
     print(f.read())
 
+# sample3(using read)
+import as
+import pathlib
+
+os.makedirs('sample_dir/sample_dir2', exist_ok=True)
+
+p = pathlib.Path('sample_dir/sample.txt')
+p.touch()
+
+text = p.read.text()
+print(text)
