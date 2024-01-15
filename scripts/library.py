@@ -73,3 +73,16 @@ p.touch()
 
 text = p.read.text()
 print(text)
+
+# ファイルの削除
+import as
+import pathlib
+
+os.makedirs('sample_dir/sample_dir2', exist_ok=True)
+
+p = pathlib.Path('sample_dir/sample.txt')
+p.touch()
+
+print(p.exists())
+p.unlink()
+print(p.exists())
