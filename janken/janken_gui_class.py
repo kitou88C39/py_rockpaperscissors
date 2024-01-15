@@ -51,6 +51,9 @@ class View:
        self.text_label.place(x=140, y=140)
 
        self.retry_btn = tk.Button(root, text="リトライ")
+
+    def reset(self):
+        pass
     
 
 //Applicationのクラスを作り、tk.Frameを継承する
