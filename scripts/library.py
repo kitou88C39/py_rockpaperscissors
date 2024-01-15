@@ -26,6 +26,7 @@ import as
 os.rmdir('sample_dir')
 
 # ファイルの作成
+#sample1
 import as
 import pathlib
 
@@ -33,3 +34,15 @@ os.makedirs('sample_dir/sample_dir2', exist_ok=True)
 
 p = pathlib.Path('sample_dir/sample.txt')
 p.touch()
+
+#sample2
+import as
+import pathlib
+
+os.makedirs('sample_dir/sample_dir2', exist_ok=True)
+
+p = pathlib.Path('sample_dir/sample.txt')
+p.touch()
+
+print(p)
+print(type(p))
