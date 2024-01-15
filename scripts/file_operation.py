@@ -5,6 +5,6 @@ f.write("Good morning\n")
 f.close()
 
 # sample2
-f = open("sample.txt", mode="w")
+f = open("sample.txt", mode="w" encoding="utf-8")
 print(f)
 print(type(f))
