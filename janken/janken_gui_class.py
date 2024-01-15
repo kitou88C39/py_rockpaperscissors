@@ -68,6 +68,8 @@ class View:
             self.text_label.configure(text="負け")
     
     def show_retry(self):
+        self.retry_button.place(x=175, y=360)
+        self.gu_btton["state"] = tk.DISABLED
 
     
 
