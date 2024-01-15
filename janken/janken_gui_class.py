@@ -16,21 +16,21 @@ class View:
     def __init__(self):
         //じゃんけんの画像を置く インスタンス変数にする self.を先頭に入れる
         self.gu_image = Image.open('img/gu.png').convert('RGB').resize((100,100))
-        self.gu_image = ImageTk.PhotoImage(gu_image, master=root)
+        self.gu_image = ImageTk.PhotoImage(self.gu_image, master=root)
 
         self.choki_image = Image.open('img/choki.png').convert('RGB').resize((100,100))
-        self.choki_image = ImageTk.PhotoImage(choki_image, master=root)
+        self.choki_image = ImageTk.PhotoImage(self.choki_image, master=root)
 
         self.pa_image = Image.open('img/pa.png').convert('RGB').resize((100,100))
-        self.pa_image = ImageTk.PhotoImage(pa_image)
+        self.pa_image = ImageTk.PhotoImage(self.pa_image)
 
-        self.gu_label = tk.Label(root, image=gu_image)
+        self.gu_label = tk.Label(root, image=self.gu_image)
         self.gu_label.place(x=20, y=100)
 
-        self.choki_label =.tk.Label(root, image=choki_image)
+        self.choki_label =.tk.Label(root, image=self.choki_image)
         self.choki_label.place(x=160, y=100)
 
-        self.pa_label = tk.Label(root, image=pa_image)
+        self.pa_label = tk.Label(root, image=self.pa_image)
         self.pa_label.place(x=300, y=100)
 
         self.gu_btn = tk.Button(frame, text="gu")
@@ -43,7 +43,7 @@ class View:
         self.pa_btn.place(x=335, y=320)
 
         //相手の手を表示させる
-        self.enemy_label = tk.Label(root, image=gu_image)
+        self.enemy_label = tk.Label(root, image=self.gu_image)
         self.enemy_label.place(x=160, y=20)
        
        //画面を表示させる text_labelの作成
