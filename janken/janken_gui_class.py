@@ -68,7 +68,7 @@ class View:
             self.text_label.configure(text="負け")
     
     def show_retry(self):
-        self.retry_button.place(x=175, y=360)
+        self.retry_button.place(x=185, y=360)
         self.gu_btton["state"] = tk.DISABLED
         self.choki_btton["state"] = tk.DISABLED
         self.pa_btton["state"] = tk.DISABLED
@@ -88,6 +88,9 @@ class Application(tk.Frame):
         self.view.gu_btton["command"]= lambda: self.judge(0)
         self.view.choki_btton["command"]= lambda: self.judge(1)
         self.view.pa_btton["command"]= lambda: self.judge(2)
+
+# リトライボタンの実装
+        self.view.retry_button["command"]= self.retry
 
 # じゃんけんの実際の処理
     def judge(self, my_hand):
