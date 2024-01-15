@@ -11,6 +11,13 @@ print(f)
 print(type(f))
 
 # 読み込み
+# sample1
 with = open("sample.txt", mode="r") as f:
     data = f.read()
     print(data)
+
+# sample2
+with = open("sample.txt", mode="r") as f:
+    lines = f.readlines()
+    for line in lines:
+    print(line)
