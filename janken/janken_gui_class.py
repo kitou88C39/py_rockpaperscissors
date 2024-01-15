@@ -11,7 +11,7 @@ rules = {
     (2,0):WIN,(2,1):LOSE, (2,2):DRAW
 }
 
-//View classを作成する
+# View classを作成する
 class View:
     def __init__(self):
         //じゃんけんの画像を置く インスタンス変数にする self.を先頭に入れる
@@ -52,11 +52,15 @@ class View:
 
        self.retry_btn = tk.Button(root, text="リトライ")
 
+# ジャッジとリセット
     def reset(self):
-        pass
+        enemy = random.randient(0,2)
+        result = rules[(my_hand, enemy)]
+        self.view.display(enemy, result)
+
     
 
-//Applicationのクラスを作り、tk.Frameを継承する
+# Applicationのクラスを作り、tk.Frameを継承する
 class Application(tk.Frame):
 
     def __init__(self, master=None):
@@ -70,7 +74,7 @@ class Application(tk.Frame):
         self.view.choki_btton["command"]= lambda: self.judge(1)
         self.view.pa_btton["command"]= lambda: self.judge(2)
 
-//じゃんけんの実際の処理
+# じゃんけんの実際の処理
     def judge(self, my_hand):
         pass
 
