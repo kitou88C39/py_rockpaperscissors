@@ -65,6 +65,7 @@ class Application(tk.Frame):
 
         self.view.gu_btton["command"]= lambda: self.judge(0)
         self.view.choki_btton["command"]= lambda: self.judge(1)
+        self.view.pa_btton["command"]= lambda: self.judge(2)
 
 //じゃんけんの実際の処理
     def judge(self, my_hand):
