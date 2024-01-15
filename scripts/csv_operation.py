@@ -31,3 +31,21 @@ with open('sample.csv', mode='a+', newline='') as f:
 
     f.seek(0)
     print(f.read())
+
+# DIPTリーダーを使ったコード
+
+import csv
+
+num_rows = [
+    [11, 12, 13, 14],
+    [21, 22, 23, 24],
+    [31, 32, 33, 34]
+]
+
+with open('sample.csv', mode='w+') as f:
+    writer = csv.writer(f)
+    for row in num_rows:
+    f.seek(0)
+    reader = csv.DictReader(f,fieldnames=["ONE", "TWO", "THREE", "FOR"])
+    for row in reader:
+        print(row)
