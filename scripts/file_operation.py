@@ -1,5 +1,6 @@
 # open関数の基本的な使い方
-# sample1
+#　書き込み
+# sample1 
 f = open("sample.txt", mode="w")
 f.write("Good morning\n")
 f.close()
@@ -8,3 +9,8 @@ f.close()
 f = open("sample.txt", mode="w" encoding="utf-8")
 print(f)
 print(type(f))
+
+# 読み込み
+with = open("sample.txt", mode="r") as f:
+    data = f.read()
+    print(data)
