@@ -54,9 +54,9 @@ class View:
 
 # ジャッジとリセット
     def reset(self):
-        enemy = random.randient(0,2)
-        result = rules[(my_hand, enemy)]
-        self.view.display(enemy, result)
+        pass
+
+    def display(enemy, result):
 
     
 
