@@ -56,7 +56,9 @@ class View:
 
 # ジャッジとリセット
     def reset(self):
-        pass
+        self.retry_button.place_forget()
+
+        
 # 結果を表示する
     def display(self, enemy, result):
         self.enemy_label.configure(image=self.images[enemy])
