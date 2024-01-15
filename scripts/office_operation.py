@@ -1,4 +1,4 @@
-# excel
+#excel
 #sample1
 import openpyxl as px
 
@@ -31,3 +31,10 @@ chart.add_data(value, title_from_data=True)
 ws.add_chart(chart, "E15")
 wb.save('excel_sample.xlsx')
 
+#word
+#sample1
+
+import docx
+
+document = docx.Document()
+document.save('word_sample.docx')
