@@ -56,7 +56,6 @@ class View:
 
 # ジャッジとリセット
     def reset(self):
-        pass
 
 # 結果を表示する
     def display(self, enemy, result):
