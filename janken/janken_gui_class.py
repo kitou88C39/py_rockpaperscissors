@@ -70,6 +70,8 @@ class View:
     def show_retry(self):
         self.retry_button.place(x=175, y=360)
         self.gu_btton["state"] = tk.DISABLED
+        self.choki_btton["state"] = tk.DISABLED
+        self.pa_btton["state"] = tk.DISABLED
 
     
 
