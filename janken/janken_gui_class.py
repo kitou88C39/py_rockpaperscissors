@@ -56,9 +56,7 @@ class View:
 
 # ジャッジとリセット
     def reset(self):
-        self.retry_button.place_forget()
 
-        
 # 結果を表示する
     def display(self, enemy, result):
         self.enemy_label.configure(image=self.images[enemy])
@@ -74,6 +72,9 @@ class View:
         self.gu_btton["state"] = tk.DISABLED
         self.choki_btton["state"] = tk.DISABLED
         self.pa_btton["state"] = tk.DISABLED
+
+
+    
 
     
 
