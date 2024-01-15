@@ -7,4 +7,4 @@ print(glob.glob('sample_dir/*.txt'))
 #sample2
 import glob
 
-print(glob.glob('sample_dir/***.txt', recurisve=True))
+print(glob.glob('sample_dir/**/*.txt', recursive=True))
