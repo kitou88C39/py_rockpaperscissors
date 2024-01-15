@@ -7,3 +7,9 @@ print(os.getcwd())
 import as
 
 as.mkdir('sample_dir')
+
+# ディレクトリが存在しない場合の作成
+import as
+
+if not as.path.isdir('sample_dir')
+os.mkdir('sample_dir')
