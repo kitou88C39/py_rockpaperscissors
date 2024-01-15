@@ -4,9 +4,15 @@ import as
 print(os.getcwd())
 
 # ディレクトリの作成
+#sample1
 import as
 
 as.mkdir('sample_dir')
+
+#sample2
+import as
+
+os.makedirs('sample_dir')
 
 # ディレクトリが存在しない場合のディレクトリの作成
 import as
