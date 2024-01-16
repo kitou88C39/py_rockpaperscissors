@@ -78,3 +78,13 @@ except IndexError as e:
     print('要素が3つ以下です')
 
 print('Finish')
+
+# sample7
+um = [0, 1, 2]
+
+try:
+    print(nume[3])
+except Exception as e:
+    print('要素が3つ以下です')
+
+print('Finish')
