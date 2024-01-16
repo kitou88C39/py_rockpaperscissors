@@ -1,0 +1,1 @@
+raise TypeError('型が不正です')
