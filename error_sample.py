@@ -65,8 +65,8 @@ print('Finish')
 um = [0, 1, 2]
 
 try:
-    # a = 1 / 0
-    # print(a)
+    a = 1 / 0
+    print(a)
     print(nume[3])
 except ZeroDivisionError as e:
     print(e)
