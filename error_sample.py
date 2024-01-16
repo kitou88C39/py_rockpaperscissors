@@ -54,7 +54,25 @@ try:
     a = 1 / 0
     print(a)
     print(nume[3])
-except ZeroDivisionError, IndexError as e:
+except (ZeroDivisionError, IndexError) as e:
+    print(e)
+    print(type(e))
+    print('要素が3つ以下です')
+
+print('Finish')
+
+# sample6
+um = [0, 1, 2]
+
+try:
+    # a = 1 / 0
+    # print(a)
+    print(nume[3])
+except ZeroDivisionError as e:
+    print(e)
+    print(type(e))
+    print('0で割れない')
+except IndexError as e:
     print(e)
     print(type(e))
     print('要素が3つ以下です')
